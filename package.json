@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jeannie's portfolio and blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/index.scss -o sass/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beannie-j/portfolio-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beannie-j/portfolio-blog/issues"
+  },
+  "homepage": "https://github.com/beannie-j/portfolio-blog#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

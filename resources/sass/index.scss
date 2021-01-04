@@ -1,0 +1,56 @@
+$color-primary: rgba(53, 0, 211, 0.9);
+$color-lightGreen: #7ed56f;
+// $color-mediumGreen: #55c57a;
+$color-darkGreen: #28b485;
+
+@font-face {
+  font-family: "circular-std-bold";
+  src: url("../fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circular-std-medium";
+  src: url("../fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 2rem;
+  box-sizing: border-box;
+  color: $color-primary;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.navigation-bar {
+  display: inherit;
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      margin-right: 2rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "circular-std-bold";
+  src: url("../fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circular-std-medium";
+  src: url("../fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgba(53, 0, 211, 0.9);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.navigation-bar {
+  display: inherit;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+}
+
+.navigation-bar li a {
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.navigation-bar li a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */
