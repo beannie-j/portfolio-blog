@@ -1,6 +1,6 @@
 $color-primary: rgba(53, 0, 211, 0.9);
+$color-darkGray: #444;
 $color-lightGreen: #7ed56f;
-// $color-mediumGreen: #55c57a;
 $color-darkGreen: #28b485;
 
 @font-face {
@@ -31,23 +31,24 @@ body {
   font-family: circular-std-medium, Arial, sans-serif;
   font-size: 2rem;
   box-sizing: border-box;
-  color: $color-primary;
+  color: $color-darkGray;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 2rem;
-  margin-top: 1rem;
+.container {
+  //   display: inline-block;
+}
+
+.navigation {
+  //   display: inline-block;
 }
 
 .navigation-bar {
-  display: inherit;
+  //   display: inherit;
   li {
     list-style-type: none;
     a {
       text-decoration: none;
-      margin-right: 2rem;
+      color: inherit;
     }
     a:hover {
       text-decoration: underline;
