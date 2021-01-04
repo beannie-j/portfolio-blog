@@ -38,6 +38,7 @@ body {
 .navigation-bar li a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 .navigation-bar li a:hover {
