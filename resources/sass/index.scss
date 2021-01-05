@@ -33,35 +33,50 @@ body {
   box-sizing: border-box;
   color: $color-darkGray;
 }
-
-.header {
-}
-
 .header-logo {
   width: 30px;
   height: auto;
+  transform: translateY(4px);
+
+  //   border: 1px solid black;
 }
 
 .header-text {
+  display: inline-block;
+  transform: translateY(-5px);
+  //   border: 1px solid black;
 }
 
-.container {
-}
-
-.navigation {
-}
-
-.navigation-bar {
-  display: inline;
-  li {
+nav {
+  //   display: flex;
+  //   background-color: #28b485;
+  border: black 1px solid;
+  overflow: hidden;
+  ul {
     list-style-type: none;
-    a {
-      text-decoration: none;
-      color: inherit;
-      display: inline-block;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    // overflow: hidden;
+    // vertical-align: top;
   }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+    // background-color: #dddddd;
+    text-decoration: none;
+    color: $color-darkGray;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
