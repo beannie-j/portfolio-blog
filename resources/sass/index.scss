@@ -94,6 +94,12 @@ nav {
 
   li a:hover {
     text-decoration: underline;
+    color: $color-darkGreen;
+  }
+
+  li .active a {
+    color: $color-darkGreen;
+    text-decoration: underline;
   }
 }
 

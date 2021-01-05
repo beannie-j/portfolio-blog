@@ -93,6 +93,12 @@ nav li a {
 
 nav li a:hover {
   text-decoration: underline;
+  color: #28b485;
+}
+
+nav li .active a {
+  color: #28b485;
+  text-decoration: underline;
 }
 
 .sticky {
