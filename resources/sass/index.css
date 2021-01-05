@@ -32,7 +32,6 @@ body {
 }
 
 .logo-box {
-  border: orange 1px solid;
   display: inline-block;
   z-index: -1;
 }
@@ -40,12 +39,16 @@ body {
 .logo-icon {
   width: 30px;
   height: auto;
+  border: 1px red solid;
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
 }
 
 .logo-text {
   display: inline-block;
   -webkit-transform: translateY(0.7rem);
           transform: translateY(0.7rem);
+  margin-left: 1rem;
 }
 
 .logo-icon {
@@ -59,6 +62,8 @@ body {
 
 nav {
   background-color: #fff;
+  border-bottom: 2rem solid #fff;
+  padding: 0 5rem;
 }
 
 nav ul {
@@ -78,6 +83,7 @@ nav li {
 }
 
 nav li a {
+  border: 1px red solid;
   display: inline-block;
   -webkit-transform: translateY(0.7rem);
           transform: translateY(0.7rem);
@@ -97,5 +103,6 @@ nav li a:hover {
 
 .content {
   margin-top: 10rem;
+  padding: 0 5rem;
 }
 /*# sourceMappingURL=index.css.map */
