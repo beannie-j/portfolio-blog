@@ -34,16 +34,25 @@ body {
   color: $color-darkGray;
 }
 
+.header {
+}
+
+.header-logo {
+  width: 30px;
+  height: auto;
+}
+
+.header-text {
+}
+
 .container {
-  //   display: inline-block;
 }
 
 .navigation {
-  //   display: inline-block;
 }
 
 .navigation-bar {
-  //   display: inherit;
+  display: inline;
   li {
     list-style-type: none;
     a {

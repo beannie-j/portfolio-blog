@@ -31,6 +31,15 @@ body {
   color: #444;
 }
 
+.header-logo {
+  width: 30px;
+  height: auto;
+}
+
+.navigation-bar {
+  display: inline;
+}
+
 .navigation-bar li {
   list-style-type: none;
 }
