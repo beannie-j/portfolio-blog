@@ -1,12 +1,18 @@
-// const navbar = document.querySelector(".navigation-bar");
-// const sticky = navbar.offsetTop;
+(function () {
+  const path = window.location.pathname;
+  const page = path.split("/").pop().replace(".html", "");
 
-// function stickyNavBar() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+  if (page === "projects") {
+    document.querySelector(".projects").classList.add("active");
+    return;
+  }
 
-// window.addEventListener("scroll", stickyNavBar);
+  if (page === "blog") {
+    document.querySelector(".blog").classList.add("active");
+    return;
+  }
+
+  if (page === "about") {
+    document.querySelector(".about").classList.add("active");
+  }
+})();
