@@ -212,7 +212,7 @@ nav .active a {
 }
 
 .footer-wrap {
-  margin-top: 10rem;
+  margin-top: 20rem;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -237,7 +237,6 @@ nav .active a {
 .project-box {
   width: 25vw;
   height: 60vh;
-  border: 10px red solid;
 }
 
 .card {
@@ -246,26 +245,28 @@ nav .active a {
   height: 45vh;
 }
 
-.card .project-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.link-container {
+  background-color: #28b485;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 25vw;
+  height: 45vh;
+  display: inline-block;
 }
 
 .card-img {
-  width: inherit;
-  height: inherit;
-  margin: 0;
+  width: 20vw;
+  height: 40vh;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-position: center;
 }
 
 .card-img:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .download-cv-button {
@@ -296,22 +297,29 @@ nav .active a {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.view-project-button {
-  text-transform: uppercase;
+.demo-button {
   text-decoration: none;
-  color: #28b485;
-  background-color: white;
-  border: 2px solid #28b485;
+  background-color: #28b485;
+  color: white;
   padding: 1rem 2rem;
   border-radius: 3rem;
   text-align: center;
   display: inline-block;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
 }
 
-.view-project-button:hover {
-  background-color: #28b485;
-  color: white;
-  border: 2px solid #28b485;
+.demo-button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.demo-button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=index.css.map */
