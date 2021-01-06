@@ -179,8 +179,6 @@ nav {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 2vh;
   grid-row-gap: 1vw;
-  // overflow: hidden;
-  // border: 10px red solid;
 }
 .project-box {
   width: 25vw;
@@ -188,21 +186,6 @@ nav {
   border: 10px red solid;
   // overflow: hidden;
 }
-// .box1 {
-//   background-color: black;
-//   // background-image: url("../images/tetris2.png");
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   vertical-align: middle;
-//   transition: all 0.5s ease;
-//   overflow: hidden;
-//   span {
-//     display: none;
-//     transition: all 0.5s ease;
-//   }
-// }
-
 .card {
   overflow: hidden;
   width: 25vw;
