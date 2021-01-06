@@ -116,12 +116,12 @@ nav .active a {
   width: 20rem;
   height: 20rem;
   float: right;
+  margin: 2rem;
 }
 
 .wave {
   -webkit-animation-name: wave-animation;
           animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
   /* Change to speed up or slow down */
@@ -213,41 +213,103 @@ nav .active a {
 }
 
 .footer-wrap {
+  margin-top: 10rem;
   text-align: center;
   font-size: 1.5rem;
 }
 
+.social-links {
+  display: inline-block;
+}
+
 .projects-container {
+  width: 100vw;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[3];
-      grid-template-columns: repeat(3, 300px);
-  -ms-grid-rows: (300px)[3];
-      grid-template-rows: repeat(3, 300px);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0.5vh;
+  grid-row-gap: 2vw;
+}
+
+.projects-box {
+  width: 25vw;
+  height: 45vh;
+  border: 1px black solid;
 }
 
 .box1 {
+  background-color: black;
   background-image: url("../images/tetris2.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box2 {
+  background-color: black;
   background-image: url("../images/pathfinder2.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box3 {
+  background-color: black;
   background-image: url("../images/agario.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box4 {
+  background-color: black;
   background-image: url("../images/myreads.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box5 {
+  background-color: black;
   background-image: url("../images/dino.png");
+  background-position: center;
   background-size: cover;
+}
+
+.download-cv-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #28b485;
+  border: 2px solid #28b485;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.download-cv-button:hover {
+  background-color: #28b485;
+  color: white;
+  border: 2px solid #28b485;
+}
+
+.view-project-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #28b485;
+  background-color: white;
+  border: 2px solid #28b485;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.view-project-button:hover {
+  background-color: #28b485;
+  color: white;
+  border: 2px solid #28b485;
 }
 /*# sourceMappingURL=index.css.map */

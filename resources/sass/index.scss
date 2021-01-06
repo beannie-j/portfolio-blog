@@ -43,8 +43,6 @@ body {
 .logo-icon {
   width: 30px;
   height: auto;
-  //   transform: translateY(4px);
-  //   border: 1px red solid;
   transform: translateY(0.3rem);
 }
 .logo-text {
@@ -83,8 +81,6 @@ nav {
   }
 
   li a {
-    // border: 1px red solid;
-
     display: inline-block;
     transform: translateY(0.7rem);
     text-decoration: none;
@@ -98,7 +94,6 @@ nav {
 
   .active a {
     color: $color-darkGreen;
-    // text-decoration: underline;
   }
 }
 
@@ -118,10 +113,11 @@ nav {
   width: 20rem;
   height: 20rem;
   float: right;
+  margin: 2rem;
 }
 
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-name: wave-animation;
   animation-duration: 2.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
@@ -160,37 +156,103 @@ nav {
 }
 
 .footer-wrap {
+  margin-top: 10rem;
   text-align: center;
   font-size: 1.5rem;
 }
 
+.social-links {
+  display: inline-block;
+}
+
 .projects-container {
+  width: 100vw;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  // grid-template-areas:
+  //   "box1 box2"
+  //   "box3 box4"
+  //   "box5 fr";
+  grid-column-gap: 0.5vh;
+  grid-row-gap: 2vw;
+}
+
+.projects-box {
+  width: 25vw;
+  height: 45vh;
+  border: 1px black solid;
 }
 
 .box1 {
+  background-color: black;
   background-image: url("../images/tetris2.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box2 {
+  background-color: black;
   background-image: url("../images/pathfinder2.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box3 {
+  background-color: black;
   background-image: url("../images/agario.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box4 {
+  background-color: black;
   background-image: url("../images/myreads.png");
+  background-position: center;
   background-size: cover;
 }
 
 .box5 {
+  background-color: black;
   background-image: url("../images/dino.png");
+  background-position: center;
   background-size: cover;
+}
+
+.download-cv-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-darkGreen;
+  border: 2px solid $color-darkGreen;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.download-cv-button:hover {
+  background-color: $color-darkGreen;
+  color: white;
+  border: 2px solid $color-darkGreen;
+}
+
+.view-project-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-darkGreen;
+  background-color: white;
+  border: 2px solid $color-darkGreen;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.view-project-button:hover {
+  background-color: $color-darkGreen;
+  color: white;
+  border: 2px solid $color-darkGreen;
 }
