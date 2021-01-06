@@ -216,4 +216,38 @@ nav .active a {
   text-align: center;
   font-size: 1.5rem;
 }
+
+.projects-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  -ms-grid-rows: (300px)[3];
+      grid-template-rows: repeat(3, 300px);
+}
+
+.box1 {
+  background-image: url("../images/tetris2.png");
+  background-size: cover;
+}
+
+.box2 {
+  background-image: url("../images/pathfinder2.png");
+  background-size: cover;
+}
+
+.box3 {
+  background-image: url("../images/agario.png");
+  background-size: cover;
+}
+
+.box4 {
+  background-image: url("../images/myreads.png");
+  background-size: cover;
+}
+
+.box5 {
+  background-image: url("../images/dino.png");
+  background-size: cover;
+}
 /*# sourceMappingURL=index.css.map */
