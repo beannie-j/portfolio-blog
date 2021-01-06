@@ -170,7 +170,7 @@ nav {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   // grid-template-areas:
   //   "box1 box2"
   //   "box3 box4"
@@ -192,6 +192,11 @@ nav {
   background-size: cover;
 }
 
+.box1:hover,
+.box1:focus {
+  background-image: linear-gradient(to right bottom, #7ed56fb0, #28b485ad),
+    url("../images/tetris2.png");
+}
 .box2 {
   background-color: black;
   background-image: url("../images/pathfinder2.png");

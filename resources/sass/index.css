@@ -229,8 +229,8 @@ nav .active a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0.5vh;
   grid-row-gap: 2vw;
 }
@@ -246,6 +246,12 @@ nav .active a {
   background-image: url("../images/tetris2.png");
   background-position: center;
   background-size: cover;
+}
+
+.box1:hover,
+.box1:focus {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56fb0), to(#28b485ad)), url("../images/tetris2.png");
+  background-image: linear-gradient(to right bottom, #7ed56fb0, #28b485ad), url("../images/tetris2.png");
 }
 
 .box2 {
