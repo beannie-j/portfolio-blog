@@ -232,80 +232,40 @@ nav .active a {
       grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 2vh;
   grid-row-gap: 1vw;
-  overflow: hidden;
 }
 
 .project-box {
   width: 25vw;
-  height: 45vh;
+  height: 60vh;
   border: 10px red solid;
-  overflow: hidden;
 }
 
-.box1 {
-  background-color: black;
-  background-image: url("../images/tetris2.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: middle;
+.card {
+  overflow: hidden;
+  width: 25vw;
+  height: 45vh;
+}
+
+.card .project-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card-img {
+  width: inherit;
+  height: inherit;
+  margin: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  overflow: hidden;
 }
 
-.box1 span {
-  display: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.box1:hover,
-.box1:focus {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#a8dadce3), to(#457b9dda)), url("../images/tetris2.png");
-  background-image: linear-gradient(to right bottom, #a8dadce3, #457b9dda), url("../images/tetris2.png");
+.card-img:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-}
-
-.box1:hover span,
-.box1:focus span {
-  display: block;
-  color: white;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.box2 {
-  background-color: black;
-  background-image: url("../images/pathfinder2.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.box3 {
-  background-color: black;
-  background-image: url("../images/agario.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.box4 {
-  background-color: black;
-  background-image: url("../images/myreads.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.box5 {
-  background-color: black;
-  background-image: url("../images/dino.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .download-cv-button {

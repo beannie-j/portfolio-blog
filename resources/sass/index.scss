@@ -179,77 +179,57 @@ nav {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 2vh;
   grid-row-gap: 1vw;
-  overflow: hidden;
+  // overflow: hidden;
   // border: 10px red solid;
 }
 .project-box {
   width: 25vw;
-  height: 45vh;
+  height: 60vh;
   border: 10px red solid;
-  overflow: hidden;
+  // overflow: hidden;
 }
-.box1 {
-  background-color: black;
-  background-image: url("../images/tetris2.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  transition: all 0.5s ease;
+// .box1 {
+//   background-color: black;
+//   // background-image: url("../images/tetris2.png");
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   vertical-align: middle;
+//   transition: all 0.5s ease;
+//   overflow: hidden;
+//   span {
+//     display: none;
+//     transition: all 0.5s ease;
+//   }
+// }
+
+.card {
   overflow: hidden;
-  span {
-    display: none;
-    transition: all 0.5s ease;
+  width: 25vw;
+  height: 45vh;
+
+  .project-name {
+    display: flex;
+    align-items: flex-end;
   }
 }
 
-.box1:hover,
-.box1:focus {
-  background-image: linear-gradient(to right bottom, #a8dadce3, #457b9dda),
-    url("../images/tetris2.png");
+.card-img {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+
+.card-img:hover {
   -ms-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
-  span {
-    display: block;
-    color: white;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-.box2 {
-  background-color: black;
-  background-image: url("../images/pathfinder2.png");
-  background-position: center;
-  background-size: cover;
 }
 
-.box3 {
-  background-color: black;
-  background-image: url("../images/agario.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.box4 {
-  background-color: black;
-  background-image: url("../images/myreads.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.box5 {
-  background-color: black;
-  background-image: url("../images/dino.png");
-  background-position: center;
-  background-size: cover;
-}
-
+// .box2 {
 .download-cv-button {
   text-transform: uppercase;
   text-decoration: none;
