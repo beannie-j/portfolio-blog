@@ -58,6 +58,7 @@ nav {
   border-top: #fff 3rem solid;
   border-bottom: 2rem solid #fff;
   padding: 0 10rem;
+  z-index: 1;
 }
 
 nav ul {
