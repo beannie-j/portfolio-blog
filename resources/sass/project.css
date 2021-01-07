@@ -20,7 +20,6 @@
 .project-box {
   width: 500px;
   height: 500px;
-  border: 1px solid red;
 }
 
 .card {
@@ -37,7 +36,6 @@
   width: 400px;
   height: 400px;
   display: inline-block;
-  border: 5px solid blue;
 }
 
 .card-img {
@@ -85,9 +83,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    background-color: lightblue;
-  }
   .projects-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -97,23 +92,20 @@
   }
   .project-box {
     width: 250px;
-    height: 330px;
+    height: 360px;
   }
   .card {
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
   .link-container {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-  }
   .projects-container {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -133,6 +125,10 @@
   .link-container {
     width: 330px;
     height: 330px;
+  }
+  .footer-wrap {
+    bottom: 0;
+    position: static;
   }
 }
 /*# sourceMappingURL=project.css.map */
