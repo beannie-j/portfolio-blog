@@ -56,6 +56,9 @@ $padding-left-right: 10rem;
   cursor: pointer;
 }
 
+.project-name {
+  margin-top: 1rem;
+}
 .demo-button {
   text-decoration: none;
   background-color: $color-darkGreen;
@@ -81,17 +84,29 @@ $padding-left-right: 10rem;
 @media screen and (max-width: 992px) {
   body {
     background-color: blue;
-    .projects-container {
-      display: flex;
-    }
+  }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "box1 box2"
+      "box3 box4"
+      "box5 1fr";
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
     background-color: olive;
-    .projects-container {
-      display: flex;
-    }
+  }
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5";
   }
 }
