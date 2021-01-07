@@ -81,11 +81,17 @@ $padding-left-right: 10rem;
 @media screen and (max-width: 992px) {
   body {
     background-color: blue;
+    .projects-container {
+      display: flex;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
     background-color: olive;
+    .projects-container {
+      display: flex;
+    }
   }
 }

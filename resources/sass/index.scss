@@ -14,7 +14,14 @@ $padding-left-right: 10rem;
 @font-face {
   font-family: "circular-std-medium";
   src: url("../fonts/CircularStd-Medium.woff") format("woff");
-  font-weight: 500;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circular-std-book";
+  src: url("../fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -29,7 +36,7 @@ html {
 }
 
 body {
-  font-family: circular-std-medium, Arial, sans-serif;
+  font-family: circular-std-book, Arial, sans-serif;
   font-size: 2rem;
   box-sizing: border-box;
   color: $color-darkGray;
@@ -44,24 +51,14 @@ body {
   width: 30px;
   height: auto;
   transform: translateY(0.3rem);
-}
-.logo-text {
-  display: inline-block;
-  transform: translateY(0.7rem);
-  margin-left: 1rem;
-}
-
-.logo-icon {
+  border-top: #fff 3rem solid;
   cursor: pointer;
-}
-
-.logo-text:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 nav {
+  font-family: circular-std-medium, Arial, sans-serif;
   background-color: #fff;
+  border-top: #fff 3rem solid;
   border-bottom: 2rem solid #fff;
   padding: 0 $padding-left-right;
   ul {
@@ -112,7 +109,7 @@ nav {
 .profile {
   width: 20rem;
   height: 20rem;
-  float: right;
+  // float: right;
   margin: 2rem;
 }
 
@@ -151,8 +148,18 @@ nav {
   }
 }
 
+.article-header {
+  margin-left: 29rem;
+}
+
 .article-body {
   margin-top: 3rem;
+  width: 50vw;
+  // border: 1px solid red;
+  // text-align: center;
+  margin-left: 5rem;
+  float: right;
+  line-height: 2.5rem;
 }
 
 .footer-wrap {
@@ -187,4 +194,16 @@ nav {
 .download-cv-button:active {
   transform: translateY(1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
 }
