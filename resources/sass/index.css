@@ -104,12 +104,6 @@ nav .active a {
   width: 100%;
 }
 
-.project-header {
-  margin-top: 10rem;
-  text-align: center;
-  font-size: 3rem;
-}
-
 .content {
   margin-top: 10rem;
   padding: 0 10rem;
@@ -221,54 +215,6 @@ nav .active a {
   display: inline-block;
 }
 
-.projects-container {
-  width: 100vw;
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2vh;
-  grid-row-gap: 1vw;
-}
-
-.project-box {
-  width: 25vw;
-  height: 60vh;
-}
-
-.card {
-  overflow: hidden;
-  width: 25vw;
-  height: 45vh;
-}
-
-.link-container {
-  background-color: #28b485;
-  color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 25vw;
-  height: 45vh;
-  display: inline-block;
-}
-
-.card-img {
-  width: 20vw;
-  height: 40vh;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-position: center;
-}
-
-.card-img:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
 .download-cv-button {
   text-transform: uppercase;
   text-decoration: none;
@@ -291,32 +237,6 @@ nav .active a {
 }
 
 .download-cv-button:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.demo-button {
-  text-decoration: none;
-  background-color: #28b485;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.5rem;
-  margin-top: 0.2rem;
-}
-
-.demo-button:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.demo-button:active {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);

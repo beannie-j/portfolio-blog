@@ -103,12 +103,6 @@ nav {
   width: 100%;
 }
 
-.project-header {
-  margin-top: 10rem;
-  text-align: center;
-  font-size: 3rem;
-}
-
 .content {
   margin-top: 10rem;
   padding: 0 $padding-left-right;
@@ -171,55 +165,6 @@ nav {
   display: inline-block;
 }
 
-.projects-container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2vh;
-  grid-row-gap: 1vw;
-}
-.project-box {
-  width: 25vw;
-  height: 60vh;
-}
-
-.card {
-  overflow: hidden;
-  width: 25vw;
-  height: 45vh;
-  // border: 1px solid red;
-}
-
-.link-container {
-  background-color: $color-darkGreen;
-  color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  width: 25vw;
-  height: 45vh;
-  display: inline-block;
-}
-
-.card-img {
-  width: 20vw;
-  height: 40vh;
-  transition: all 0.5s ease;
-  background-position: center;
-}
-
-.card-img:hover {
-  -ms-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  cursor: pointer;
-  // background-color: #28b485;
-}
-
-// .box2 {
 .download-cv-button {
   text-transform: uppercase;
   text-decoration: none;
@@ -240,28 +185,6 @@ nav {
 }
 
 .download-cv-button:active {
-  transform: translateY(1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.demo-button {
-  text-decoration: none;
-  background-color: $color-darkGreen;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.5rem;
-  margin-top: 0.2rem;
-}
-
-.demo-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.demo-button:active {
   transform: translateY(1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
