@@ -78,15 +78,15 @@
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-  }
-}
-
 @media screen and (max-width: 992px) {
   body {
     background-color: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
   }
 }
 /*# sourceMappingURL=project.css.map */
