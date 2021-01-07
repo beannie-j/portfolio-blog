@@ -18,14 +18,15 @@
 }
 
 .project-box {
-  width: 25vw;
-  height: 60vh;
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
 }
 
 .card {
   overflow: hidden;
-  width: 25vw;
-  height: 45vh;
+  width: 400px;
+  height: 400px;
 }
 
 .link-container {
@@ -33,9 +34,10 @@
   color: white;
   padding: 2rem;
   border-radius: 1rem;
-  width: 25vw;
-  height: 45vh;
+  width: 400px;
+  height: 400px;
   display: inline-block;
+  border: 5px solid blue;
 }
 
 .card-img {
@@ -84,7 +86,7 @@
 
 @media screen and (max-width: 992px) {
   body {
-    background-color: blue;
+    background-color: lightblue;
   }
   .projects-container {
     -ms-grid-columns: (1fr)[2];
@@ -92,6 +94,19 @@
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: "box1 box2" "box3 box4" "box5 1fr";
+  }
+  .project-box {
+    width: 250px;
+    height: 330px;
+  }
+  .card {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+  }
+  .link-container {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -105,6 +120,19 @@
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: "box1" "box2" "box3" "box4" "box5";
+  }
+  .project-box {
+    width: 400px;
+    height: 450px;
+  }
+  .card {
+    overflow: hidden;
+    width: 330px;
+    height: 330px;
+  }
+  .link-container {
+    width: 330px;
+    height: 330px;
   }
 }
 /*# sourceMappingURL=project.css.map */
