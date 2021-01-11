@@ -6,7 +6,7 @@ This is the repository for my design and development portfolio.
 
 ## Demo
 
-TBC
+https://jeanniean.netlify.app/
 
 ## Getting Started
 
